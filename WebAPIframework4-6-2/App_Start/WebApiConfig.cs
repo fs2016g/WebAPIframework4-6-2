@@ -9,7 +9,7 @@ namespace WebAPIframework4_6_2
     {
         public static void Register(HttpConfiguration config)
         {
-            // Web API configuration and services
+            // Web API configuration and service
 
             // Web API routes
             config.MapHttpAttributeRoutes();
