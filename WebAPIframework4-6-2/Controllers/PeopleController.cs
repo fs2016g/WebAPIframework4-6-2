@@ -27,19 +27,21 @@ namespace WebAPIframework4_6_2.Controllers
         }
 
         // GET: api/People/5
-        public string Get(int id)
+        public Person Get(int id)
         {
-            return "value";
+            return people.Where(x => x.Id == id).FirstOrDefault();
         }
 
         // POST: api/People
-        public void Post([FromBody]string value)
+        public void Post(Person val)
         {
+            people.Add(val);
         }
 
         // DELETE: api/People/5
         public void Delete(int id)
         {
+            
         }
     }
 }
